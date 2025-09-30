@@ -8,6 +8,69 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- /* siempre ligar el stylo para los cambios dentro de la pagina*/ -->
     <link rel="stylesheet" href="styles3.css">
+<!-- Fondo y estilos -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #a5d6a7, #f5f5dc); /* Verde suave a beige */
+        font-family: Arial, sans-serif;
+      }
+
+      /* Ajuste de texto */
+      section h2 {
+        color: #2e7d32;
+        font-weight: bold;
+      }
+      section p {
+        color: #444;
+      }
+
+      /* Animación suave en los enlaces */
+      .animated-link {
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      .animated-link::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ffc107;
+        transition: all 0.3s ease-in-out;
+      }
+      .animated-link:hover {
+        color: #ffc107 !important;
+        transform: translateY(-2px);
+      }
+      .animated-link:hover::after {
+        width: 100%;
+      }
+
+      /* Botón animado */
+      .animated-btn {
+        transition: all 0.3s ease-in-out;
+        border-radius: 30px;
+        font-weight: bold;
+      }
+      .animated-btn:hover {
+        background-color: #ffca2c !important;
+        transform: scale(1.08);
+        box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.7);
+      }
+
+      /* Carrusel */
+      .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      @media (max-width: 768px) {
+        .carousel-item img {
+          height: 250px;
+        }
+      }
+    </style>
 </head>
 <body>
     
@@ -171,7 +234,6 @@
 </style>
 
 
-   
     </div>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
@@ -203,4 +265,5 @@
       transform: translateY(0);
     }
   }
+  
 </style>
