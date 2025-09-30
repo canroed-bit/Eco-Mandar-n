@@ -123,6 +123,74 @@
 </body>
 </html>
 
+<style>
+  /* Fondo degradado en toda la pantalla */
+  body {
+    background: linear-gradient(135deg, #a5d6a7, #f5f5dc); /* verde suave → beige */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh; /* asegura que cubra toda la pantalla */
+  }
+
+  /* Ajuste de títulos y párrafos */
+  section h2, .container h2 {
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  section p, .container p {
+    color: #444;
+  }
+
+  /* Animación en los enlaces */
+  .animated-link {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .animated-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc107;
+    transition: all 0.3s ease-in-out;
+  }
+  .animated-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+  }
+  .animated-link:hover::after {
+    width: 100%;
+  }
+
+  /* Botón animado */
+  .animated-btn {
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  .animated-btn:hover {
+    background-color: #ffca2c !important;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.7);
+  }
+
+  /* Carrusel */
+  .carousel-item img {
+    height: 500px;       /* altura fija en computador */
+    object-fit: cover;   /* recorta sin deformar */
+    border-radius: 10px;
+  }
+
+  /* En móviles que no quede tan alto */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 250px; /* más bajo en celulares */
+    }
+  }
+</style>
+
 <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-4">
     <p>&copy; 2025 Casa de Descanso | Todos los derechos reservados</p>
