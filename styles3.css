@@ -1,0 +1,54 @@
+/* --- Ajustes generales del carrusel --- */
+.carousel-item img {
+  border-radius: 15px;       /* Bordes redondeados */
+  object-fit: cover;         /* Mantiene proporciones */
+  height: 500px;             /* Altura fija para uniformidad */
+}
+
+/* --- Sombras suaves a las imágenes --- */
+.carousel-item img {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* --- Texto de los captions (títulos) --- */
+.carousel-caption h5,
+.carousel-caption h6 {
+  background: rgba(0, 0, 0, 0.6);   /* Fondo semitransparente */
+  padding: 8px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* --- Animación suave en el texto --- */
+.carousel-caption {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* --- Botones de control (prev/next) personalizados --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);   /* Los pone blancos */
+  width: 40px;
+  height: 40px;
+}
+
+/* --- Indicadores (los puntitos abajo del carrusel) --- */
+.carousel-indicators [data-bs-target] {
+  background-color: #444;    /* Color de los puntitos */
+}
+.carousel-indicators .active {
+  background-color: #ff6600; /* Color del puntito activo */
+}

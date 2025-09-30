@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ajuste de altura y estilo del carrusel */
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Animaciones */
+    .animate-caption {
+      animation: fadeUp 1.2s ease-in-out;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Imagenes\Logo 1.jpg" alt="logo" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Modelo 1.html">🏠 Volver al Inicio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título -->
+  <div class="container text-center mt-4">
+    <h2 class="mb-3">Nuestras Instalaciones</h2>
+    <h2 class="mb-3">Habitaciones</h2>
+    <p class="text-muted">
+      Conoce los espacios diseñados para tu descanso y diversión.  
+      Nuestra acogedora casa campestre cuenta con dos habitaciones amplias,  
+      cada una con su baño privado, una zona social y una cocina abierta.
+    </p>
+  </div>
+
+  <!-- Carrusel con autoplay -->
+  <div id="carouselHabitaciones" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselHabitaciones" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselHabitaciones" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselHabitaciones" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselHabitaciones" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#carouselHabitaciones" data-bs-slide-to="4"></button>
+    </div>
+
+<!-- Slides -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src= "C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Instalciones\Habitacion 1.jpg"" class="d-block w-100" alt="Habitación 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 animate-caption">
+          <h5 class="text-white">Habitación 1</h5>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Imagenes\Habitacion 2.jpg" class="d-block w-100" alt="Habitación 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 animate-caption">
+          <h5 class="text-white">Habitación 2</h5>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Imagenes\Zona social.jpg" class="d-block w-100" alt="Zona Social">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 animate-caption">
+          <h5 class="text-white">Zona Social</h5>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <img src="C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Imagenes\Cocina.jpg" class="d-block w-100" alt="Cocina">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 animate-caption">
+          <h5 class="text-white">Cocina</h5>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <img src="C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Imagenes\Baño.jpg" class="d-block w-100" alt="Baño">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 animate-caption">
+          <h5 class="text-white">Baño</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabitaciones" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHabitaciones" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2025 Casa de Descanso | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
