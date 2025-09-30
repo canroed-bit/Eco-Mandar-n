@@ -5,28 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instalaciones</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Ajuste de altura y estilo del carrusel */
-    .carousel-item img {
-      height: 500px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    }
+   <link rel="stylesheet" href="styles3.css">
 
-    /* Animaciones */
-    .animate-caption {
-      animation: fadeUp 1.2s ease-in-out;
-    }
+<!-- Fondo y estilos -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #a5d6a7, #f5f5dc); /* Verde suave a beige */
+        font-family: Arial, sans-serif;
+      }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    </style>
 </head>
-<body class="bg-light">
-
+<body>
+    
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -72,7 +63,7 @@
     <div class="carousel-inner">
       <!-- Slide 1 -->
       <div class="carousel-item active">
-        <img src= "C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Instalciones\Habitacion 1.jpg"" class="d-block w-100" alt="Habitación 1">
+        <img src= "C:\Users\Canro\Desktop\DOC. PERSONALES\pagina web sweet\Oscar\Imagenes\Habitacion 1.jpg" class="d-block w-100" alt="Habitación 1">
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 animate-caption">
           <h5 class="text-white">Habitación 1</h5>
         </div>
@@ -122,16 +113,80 @@
     </button>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  <style>
+  /* Fondo degradado en toda la pantalla */
+  body {
+    background: linear-gradient(135deg, #a5d6a7, #f5f5dc); /* verde suave → beige */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh; /* asegura que cubra toda la pantalla */
+  }
 
-<!-- Footer -->
+  /* Ajuste de títulos y párrafos */
+  section h2, .container h2 {
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  section p, .container p {
+    color: #444;
+  }
+
+  /* Animación en los enlaces */
+  .animated-link {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .animated-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc107;
+    transition: all 0.3s ease-in-out;
+  }
+  .animated-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+  }
+  .animated-link:hover::after {
+    width: 100%;
+  }
+
+  /* Botón animado */
+  .animated-btn {
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  .animated-btn:hover {
+    background-color: #ffca2c !important;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.7);
+  }
+
+  /* Carrusel */
+  .carousel-item img {
+    height: 500px;       /* altura fija en computador */
+    object-fit: cover;   /* recorta sin deformar */
+    border-radius: 10px;
+  }
+
+  /* En móviles que no quede tan alto */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 250px; /* más bajo en celulares */
+    }
+  }
+</style>
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-4">
     <p>&copy; 2025 Casa de Descanso | Todos los derechos reservados</p>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
